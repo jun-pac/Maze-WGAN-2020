@@ -322,7 +322,7 @@ if __name__=="__main__":
     n=8
 
     for i in tqdm.tqdm(range(10)):
-        p=0.3+(0.7/10)*i
+        p=round(0.3+(0.7/10)*i,2)
         fig=plt.figure(figsize=(16,4))
         fig.suptitle('P='+str(p), fontsize=16)
         for t in range(8):
